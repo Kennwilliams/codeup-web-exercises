@@ -1,2 +1,3 @@
 "Getting Git is legit"
-Second text is up next
+Second text is up next touch .giting
+secret.txt
