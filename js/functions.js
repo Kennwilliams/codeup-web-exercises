@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 
 console.log("Inside functions.js");
 
@@ -9,7 +9,7 @@ console.log("Inside functions.js");
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
-sayHello(name) {
+function sayHello(name) {
     return "Hello, " + name + "!";
 }
 /* TODO:
@@ -17,7 +17,7 @@ sayHello(name) {
  * Store the result of the function call in a variable named 'helloMessage'.
 * console.log 'helloMessage' to check your work
 */
-const helloMessage = sayHello('Kennneth');
+const helloMessage = sayHello("Kenneth");
 console.log(helloMessage);
 
 /* TODO:
@@ -31,7 +31,6 @@ console.log(sayHello(myName));
 // and stores it in a variable named random
 const random = Math.floor((Math.random() * 3) + 1);
 
-
 /* TODO:
  * Create a function called 'isTwo' that takes a number as a parameter.
  * The function should return a boolean value based on whether or not the passed
@@ -41,14 +40,14 @@ const random = Math.floor((Math.random() * 3) + 1);
  * > isTwo(1) // returns false
  * > isTwo(2) // returns true
  * > isTwo(3) // returns false
- *
+ */
 function isTwo(number) {
   return number === 2;
     }
-* Call the function 'isTwo' passing the variable 'random' as a argument.
+// Call the function 'isTwo' passing the variable 'random' as a argument.
 console.log(isTwo(random));
 
-* console.log *outside of the function* to check your work (you should see a
+/* console.log *outside of the function* to check your work (you should see a
 * different result everytime you refresh the page if you are using the random
 * number)
 */
@@ -58,16 +57,16 @@ console.log(isTwo(random));
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
  * restaurant. The function should accept a tip percentage and the total of the
  * bill, and return the amount to tip
- *
- * Examples:
- * > calculateTip(0.20, 20) // returns 4
- * > calculateTip(0.25, 25.50) // returns 6.375
- * > calculateTip(0.15, 33.42) // returns 5.013
+
+// Examples:
+//  > calculateTip(0.20, 20) // returns 4
+//  > calculateTip(0.25, 25.50) // returns 6.375
+//  > calculateTip(0.15, 33.42) // returns 5.013
+//
  */
 function calculateTip(tipPercentage, totalBill) {
-     return tipPercentage * totalBill;
+    return tipPercentage * totalBill;
 }
-
 
 /* TODO:
 * Use prompt and alert in combination with your calculateTip function to
@@ -76,6 +75,7 @@ function calculateTip(tipPercentage, totalBill) {
 */
 const billTotal = prompt("Enter the total bill amount:");
 const tipPercentage = prompt("Enter the tip percentage (as a decimal):");
+const tipAmount = calculateTip(parseFloat(tipPercentage), parseFloat(billTotal));
 alert("You should tip: $" + tipAmount);
 
 /* TODO:
@@ -94,4 +94,3 @@ let discountPercent = .2; // 20%
 applyDiscount(originalPrice, discountPercent) // 80
 *
 applyDiscount(45.99, 0.12) // 40.4712
-*/
