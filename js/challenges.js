@@ -122,9 +122,9 @@ console.log("Inside challenges.js");
 
 function flickSwitch(array){
     // Create an accumulator that will hold the true or false values
-
+    const returnArray = [];
     // Create a variable to hold what our previous boolean value was
-
+    let currentBoolean = true;
     for(const word of array) {
         // check to see if the word is 'flick'
 
