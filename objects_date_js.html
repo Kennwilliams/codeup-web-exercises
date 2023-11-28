@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Date Objects</title>
+    <title>JavaScript | Date Object</title>
 </head>
 <body>
+<h1>JavScript Date Object</h1>
+
     <script>
         'use strict';
 
@@ -23,7 +25,8 @@
         // Log your birthday in the format: January 1, 2014 using the JavaScript Date object.
         // See link below for methods needed:
         // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#Getter
-        console.log('Here is my birthday using JavaScript: ' + months[jsBirthday.getMonth()] + '' + jsBirthday.getDate() + ',' + jsBirthday.getFullYear());
+        let monthIndex = jsBirthday.getMonth();
+        console.log(`Here is my birthday using JavaScript: ${months[monthIndex]} ${jsBirthday.getDate()}, ${jsBirthday.getFullYear()}`);
     </script>
 </body>
 </html>
