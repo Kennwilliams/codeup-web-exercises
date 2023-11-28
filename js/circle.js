@@ -3,14 +3,13 @@
 console.log("Inside circle.js");
 
 // create a circle object
-var circle = {
+const circle = {
     radius: 3,
 
     getArea: function () {
         // TODO: complete this method
         // hint: area = pi * radius^2
-        var area = Math.PI * Math.pow(this.radius, 2);
-        return area; // TODO: return the proper value
+        let area = Math.PI * Math.pow(this.radius, 2);
     },
 
     logInfo: function (doRounding) {
@@ -18,7 +17,7 @@ var circle = {
 
         // If doRounding is true, round the result to the nearest integer.
         // Otherwise, output the complete value
-        var area = this.getArea();
+        let area = this.getArea();
 
         if (doRounding) {
             area = Math.round(area);
