@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register With Us</title>
+
+</head>
+<body>
+    <h1>Code Rush</h1>
+     <form method="POST" action="https://request-inspector.glitch.me/">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" placeholder="Enter your email" required>
+    <br>
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Enter your password" required>
+    <br>
+         <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio" placeholder="Tell us about yourself"></textarea>
+    <br>
+        <fieldset>
+              <legend>How did you hear about us?</legend>
+              <label>
+                  <input type="radio" name="hear-about" value="billboard"> Billboard
+              </label>
+            <label>
+                <input type="radio" name="hear-about" value="radio-advertisement"> Radio Advertisement
+            </label>
+            <label>
+                <input type="radio" name="hear-about" value="internet-advertisement"> Internet Advertisement
+            </label>
+            <label>
+                <input type="radio" name="hear-about" value="other"> Other
+            </label>
+        </fieldset>
+    <br>
+         <fieldset>
+             <legend>Choose multiple answers:</legend>
+             <label>
+                 <input type="checkbox" name="multiple-answer" value="friend-referral"> Friend Referral
+             </label>
+             <label>
+                 <input type="checkbox" name="multiple-answer" value="social-media-ad"> Social Media Ad
+             </label>
+             <label>
+                 <input type="checkbox" name="multiple-answer" value="google-search"> Google Search
+             </label>
+         </fieldset>
+    <br>
+         <label for="browser">Select your web browser:</label>
+         <select id="browser" name="browser">
+             <option value="chrome">Chrome</option>
+             <option value="firefox">Firefox</option>
+             <option value="safari">Safari</option>
+             <option value="edge">Edge</option>
+             <option value="other">Other</option>
+         </select>
+    <br>
+         <button type="submit">Submit</button>
+     </form>
+
+
+</body>
+</html>
