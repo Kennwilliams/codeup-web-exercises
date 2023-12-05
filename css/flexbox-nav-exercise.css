@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+
+}
+body {
+    margin: 0;
+}
+nav {
+    background: grey;
+    box-sizing: border-box;
+    align-content: space-between;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+li {
+    padding: 1em;
+}
+
+.jobs {
+    margin-right: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Ubuntu, sans-serif;
+    display: inline-block;
+}
+nav a:hover {
+    background: blue;
+}
