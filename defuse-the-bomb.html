@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Defuse the BOMB</title>
+</head>
+<body>
+
+<h2 id="message">This BOMB will self destruct in <span id="timer">5</span> seconds...</h2>
+<button id="defuser">Defuse the BOMB</button>
+
+<script>
+(function() {
+    "use strict";
+
+    let detonationTimer = 5;
+    let timerInterval;   // Variable to store the interval ID
+
+    // TODO: This function needs to be called once every second
+    function updateTimer() {
+        if (detonationTimer === 0) {
+            alert('EXTERMINATE!');
+            document.body.innerHTML = '';
+            clearInterval(timerInterval); // Stop the interval when the timer reaches 0
+        } else if (detonationTimer > 0) {
+            document.getElementById('timer').innerHTML = detonationTimer;
+        }
+
+        detonationTimer--;
+    }
+
+    // TODO: When this function runs, it needs to
+    // cancel the interval/timeout for updateTimer()
+
+    // When this function runs, it needs to cancel the interval for updateTimer()
+    function defuseTheBOM() {
+        clearInterval(timerInterval);  // Stop the interval
+        alert('Bomb defused!');       // Optional: You can provide a message indicating that the bomb is defused
+    }
+    // Set up the interval to call updateTimer every second
+    timerInterval = setInterval(updateTimer, 1000);
+
+    // Don't modify anything below this line!
+    //
+    // This causes the defuseTheBOM() function to be called
+    // when the "defuser" button is clicked.
+    // We will learn about events in the DOM lessons
+    let defuser = document.getElementById('defuser');
+    defuser.addEventListener('click', defuseTheBOM);
+})();
+</script>
+</body>
+</html>
