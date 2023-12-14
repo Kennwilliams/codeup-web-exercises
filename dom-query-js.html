@@ -28,13 +28,13 @@
 <script>
   "use strict";
   // TODO: Uncomment next line and get the main header element by id
-   const mainHeader = document.getElementById('main-header');
+   const mainHeader = document.querySelector("#main-header");
 
   // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-  mainHeader.innerHTML = "Javascript is a pain"
+  mainHeader.innerHTML = "Javascript is Cool"
 
   // TODO: Uncomment the next line and get the sub header element by id
-   const subHeader =document.getElementById('sub-header');
+   const subHeader =document.querySelector("#sub-header");
 
   // TODO: Set the text color of subHeader to blue
    subHeader.style.color = "blue";
@@ -51,7 +51,7 @@
        }
    });
   // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-   const subParagraphs = document.getElementsByClassName('sub-paragraph');
+   const subParagraphs = document.querySelectorAll('.sub-paragraph');
 
   // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
    subParagraphs[0].textContent = "Mission Accomplished!";
